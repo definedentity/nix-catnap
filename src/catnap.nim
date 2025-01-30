@@ -10,7 +10,6 @@ import strutils
 import strformat
 import std/wordwrap
 import "catnaplib/platform/probe"
-from "catnaplib/global/currentcommit" import CURRENTCOMMIT
 
 # Debug code for execution time
 when not defined release:
@@ -73,7 +72,7 @@ if paramCount() > 0:
 
         # Version Argument
         if param == "-v" or param == "--version":
-            echo "Commit " & CURRENTCOMMIT
+            echo "1.0.0"
             quit()
 
         # Config Argument

@@ -56,7 +56,6 @@ task clean, "Cleans existing build":
 task release, "Builds the project in release mode":
     cleanTask()
     echo "\e[36;1mBuilding\e[0;0m in release mode"
-    exec &"./scripts/git-commit-id.sh"
     compile(true)
 
 task debug, "Builds the project in debug mode":
